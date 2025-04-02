@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1>Model Form을 이용한 새 글 작성 페이지</h1>
-    <form action="" method="POST">
+    <form action="" method="POST" enctype="multipart/form-data">
       {% csrf_token %}
       <table>
         {{ form.as_table }} <!-- 폼을 테이블 형식으로 출력 -->
