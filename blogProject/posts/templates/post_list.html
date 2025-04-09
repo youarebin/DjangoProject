@@ -99,9 +99,10 @@
           <div class="post-preview">
             <a href="{% url 'post_detail' post.id %}">
               <a href="{% url 'post_detail' post.id %}">
-              <h2 class="post-title">{{post.title}}</h2>
-              <h3 class="post-subtitle">{{post.body}}</h3>
-            </a>
+                <h2 class="post-title">{{post.title}}</h2>
+                <h4 class="post-author">작성자 : {{post.author}}</h4>
+                <h3 class="post-subtitle">{{post.body}}</h3>
+              </a>
             <p class="post-meta">{{post.created_at}}</p>
           </div>
 
